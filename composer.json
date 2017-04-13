@@ -1,0 +1,16 @@
+{
+    "name": "eataly/etphonehome",
+    "description": "This Magento module adds a configuration for the no-route page to issue a redirect (301 or 302) to the homepage instead of the standard 404 page.",
+    "version": "1.0.0",
+    "type": "magento-module",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Alessandro Niciforo",
+            "email": "a.niciforo@eataly.it"
+        }
+    ]
+}

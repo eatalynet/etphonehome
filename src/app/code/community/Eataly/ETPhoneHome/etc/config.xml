@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Eataly_ETPhoneHome>
+            <version>1.0.0</version>
+        </Eataly_ETPhoneHome>
+    </modules>
+    <global>
+        <models>
+            <eataly_etphonehome>
+                <class>Eataly_ETPhoneHome_Model</class>
+            </eataly_etphonehome>
+        </models>
+    </global>
+    <frontend>
+        <routers>
+            <eataly_etphonehome>
+                <use>standard</use>
+                <args>
+                    <module>Eataly_ETPhoneHome</module>
+                    <frontName>eataly_etphonehome</frontName>
+                </args>
+            </eataly_etphonehome>
+        </routers>
+    </frontend>
+    <default>
+        <web>
+            <routers>
+                <eataly_etphonehome>
+                    <class>Eataly_ETPhoneHome_Controller_Router</class>
+                </eataly_etphonehome>
+            </routers>
+        </web>
+    </default>
+</config>
