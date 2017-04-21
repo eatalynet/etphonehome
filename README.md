@@ -21,7 +21,7 @@ In your `composer.json`, in the section `repositories`, add this repository:
 
 Then open a terminal in the folder containing the `composer.json` and run:
 
-    composer require eataly/etphonehome:1.0.0
+    composer require eataly/etphonehome
 
 ### Modman
 
