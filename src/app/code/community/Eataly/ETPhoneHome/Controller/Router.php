@@ -13,7 +13,7 @@ class Eataly_ETPhoneHome_Controller_Router extends Mage_Core_Controller_Varien_R
             return false;
         }
 
-        switch ($this->_getETPhoneHomeConfig()) {
+        switch (Mage::helper('eataly_etphonehome')->getRedirectConfig()) {
             case 301:
                 $code = 301;
                 break;
@@ -30,16 +30,6 @@ class Eataly_ETPhoneHome_Controller_Router extends Mage_Core_Controller_Varien_R
             ->setParam('code', $code);
 
         return true;
-    }
-
-    /**
-     * Retrieve default router config
-     *
-     * @return string
-     */
-    protected function _getETPhoneHomeConfig()
-    {
-        return Mage::app()->getStore()->getConfig('web/default/eataly_etphonehome');
     }
 
     /**

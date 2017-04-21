@@ -12,9 +12,25 @@
                 <class>Eataly_ETPhoneHome_Model</class>
             </eataly_etphonehome>
         </models>
+        <helpers>
+            <eataly_etphonehome>
+                <class>Eataly_ETPhoneHome_Helper</class>
+            </eataly_etphonehome>
+        </helpers>
     </global>
     <frontend>
+        <events>
+            <controller_action_noroute>
+                <observers>
+                    <eataly_etphonehome>
+                        <class>Eataly_ETPhoneHome_Model_Observer</class>
+                        <method>onNoRoute</method>
+                    </eataly_etphonehome>
+                </observers>
+            </controller_action_noroute>
+        </events>
         <routers>
+
             <eataly_etphonehome>
                 <use>standard</use>
                 <args>
